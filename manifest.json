@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "AutoFiller",
+    "version": "1.0",
+    "description": "Parses a webpage and auto-fills an application form with hardcoded values",
+    "permissions": ["activeTab", "scripting"],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["autofill.js"]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}

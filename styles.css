@@ -1,0 +1,38 @@
+/* Body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #404040; /* Light gray background */
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace; /* Monospace coding font */
+    text-align: center;
+}
+
+/* Style for the Auto-Fill button */
+#yesButton {
+    padding: 15px 30px;
+    font-size: 14px;
+    background-color: #404040; /* Light gray background */
+    font-family: "Monaco";
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    color: white; /* Dark text */
+    cursor: pointer;
+    text-align: center;
+    display: inline-block; /* Ensures the button text stays on one line */
+    white-space: nowrap; /* Prevents wrapping */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect */
+#yesButton:hover {
+    background-color: #505050; /* Darker gray background on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Focus outline */
+#yesButton:focus {
+    outline: 2px solid #555; /* Darker border on focus */
+}
